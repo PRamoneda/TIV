@@ -1,5 +1,8 @@
 import os
 from setuptools import setup, find_packages
+
+from TIVlib.version import *
+
 PACKAGES = find_packages()
 
 # Get version and release info, which is all stored in toymir/version.py
@@ -27,4 +30,4 @@ opts = dict(name=NAME,
 
 
 if __name__ == '__main__':
-    setup(**opts, install_requires=['numpy'])
+    setup(**opts, install_requires=['numpy', 'essentia'])

@@ -115,7 +115,7 @@ class TIV:
         self.vector = vector
 
     @classmethod
-    def from_pcp(cls,pcp):
+    def from_pcp(cls, pcp):
         fft = np.fft.rfft(pcp, n=12)
         energy = fft[0]
         vector = fft[1:7]
